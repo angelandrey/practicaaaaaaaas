@@ -1,123 +1,21 @@
 # practicaaaaaaaas
-1- Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos. (Es cierto que python tiene una función max() incorporada, pero hacerla nosotros mismos es un muy buen ejercicio.
-Solucion:
- 
-  def mayor(a,b):
-    if(a > b):
-        return a
-    if(b > a):
-        return b
-        
-2- Definir una función max_de_tres(), que tome tres números como argumentos y devuelva el mayor de ellos. 
-Solucion:
-  
-  def mayor3(a,b,c):
-    if((a > b) and (a > c)):
-        return a
-    if((b > a) and (b > c)):
-        return b
-    if((c > a) and (c > b)):
-        return c
-        
-3- Definir una función que calcule la longitud de una lista o una cadena dada. (Es cierto que python tiene la función len() incorporada, pero escribirla por nosotros mismos resulta un muy buen ejercicio.
-  Solucion:
-    
-    Funcion isNum():
-      def isnum(a):
-      try:
-         int(a)
-      except:
-         return False;
-      return True;
-   Funcion Length():
-    def length(a):
-    i = 0
-    if not (isnum(a)):
-        for i in range(len(a)):
-            i = i + 1
-    elif(isnum(a)):
-        return(a)
-    return(i)
-   
-4- Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
-  Solucion:
-    Funcion isChar:
-      def isChar(s):
-        if(len(s) > 1):
-          return False
-        if(len(s) == 1):
-          return True
-    Funcion isVoc:
-      def isvoc(s):
-        vocales = "aeiouáéíóú"
-        if not(isnum(s)) and (isChar(s)):
-           for i in range(len(vocales)):
-              for j in range(len(s)):
-                  if (vocales[i] == s):
-                      return True
-                  else:
-                     return False
-        elif(isnum(s)):
-            print("El valor es un numero")
-        elif not(isChar(s)):
-            print("El valor no es solo un caracter")
-        
-5- Escribir una funcion sum() y una función multip() que sumen y multipliquen respectivamente todos los números de una lista. Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
- 
-  Solucion:
-    def suma(a):
-    total = 0
-    for i in range(len(a)):
-        total += a[i] 
-    return total
-  def mult(a):
-    total = 1
-    for i in range(len(a)):
-        total *= a[i]
-    return total
-
-6- Definir una función inversa() que calcule la inversión de una cadena. Por ejemplo la cadena "estoy probando" debería devolver la cadena "odnaborp yotse"
-  Solucion:
-    
-    def inversa(a):
-      trans = ""
-      if(isnum(a)):
-          print("La entrada es un numero")
-          return "Error"
-      elif not(isChar(a) and isnum(a)):
-          for i in range(len(a)):
-              trans = trans + a[(len(a)-1)-i]
-          return trans
-    
-     else:
-          print("La entrada no deve ser un numero o una sola letra")
-    
-7 - Definir una función es_palindromo() que reconoce palíndromos (es decir, palabras que tienen el mismo aspecto escritas invertidas), ejemplo: es_palindromo ("radar") tendría que devolver True.
-  Solucion:
-    
-    def isPalindromo(a):
-      inv = inversa(a)
-      if(inv == a):
-          return True
-      else:
-         return False
-         
-         
-8- Definir una función superposicion() que tome dos listas y devuelva True si tienen al menos 1 miembro en común o devuelva False de lo contrario. Escribir la función usando el bucle for anidado. 
- Solucion:
-  
-  def sPos(a,b):
-    for i in range(len(a)):
-        for j in range(len(b)):
-            if(a[i] == b[j]):
-                return True
-            else:
-                return False
-                
-9- Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx".
-  Solucion:
-    def Cgen(a,b):
-       c = b
-       for i in range(a):
-            b = b + c
-       return b
+# Practica 1
+![image](https://github.com/user-attachments/assets/9c20fb0a-9e84-4af6-8bd6-6db342777163)
+# Practica 2
+![image](https://github.com/user-attachments/assets/5329cd39-e213-4378-bfe1-a46d2fee218c)
+# Practica 3
+![image](https://github.com/user-attachments/assets/a1bdbfdb-5984-4ea8-851e-a241503d22ac)
+# Practica 4
+![image](https://github.com/user-attachments/assets/148fcb13-0a6c-4836-881b-8cdb0ce61023)
+# Practica 5
+![image](https://github.com/user-attachments/assets/803f9894-0d1c-4f7d-b593-c717c6c63bf3)
+# Practica 6
+![image](https://github.com/user-attachments/assets/ca2da3dd-2f5d-46b1-9667-f57676ff8c2f)
+# Practica 7
+![image](https://github.com/user-attachments/assets/996da925-2dba-4705-ba00-f4fe772eeae7)
+# Practica 8
+![image](https://github.com/user-attachments/assets/2002040c-9683-4a47-be6d-282686134ddf)
+# Practica 9
+![image](https://github.com/user-attachments/assets/42704d0d-c868-46b0-87b0-7d270174b59f)
+# Practica 10
+![image](https://github.com/user-attachments/assets/dc37120e-dbb9-4196-a22d-0f158a67539a)
